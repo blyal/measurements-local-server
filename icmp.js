@@ -48,9 +48,8 @@ async function runPingTest(numberOfTrials, remoteEndpoint) {
   pingTestResults = [];
   for (let i = 0; i < numberOfTrials; i++) {
     try {
-      console.log(remoteEndpoint);
       const pingResult = await new Promise((resolve) => {
-        const pingSession = ping.promise.probe('www.ddpyoga.com', {
+        const pingSession = ping.promise.probe(remoteEndpoint, {
           timeout: 2000,
           extra: ['-s', '32'],
         });
