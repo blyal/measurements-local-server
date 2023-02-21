@@ -69,7 +69,7 @@ PowerShell is included in Windows 10 by default. If you are using an older versi
 
 4. The server should now be running. You can test this by clicking the "Check Status Local Server" button in the web app.
 
-5. To stop the server, go to the terminal window and press `Ctrl+C`
+5. To stop the server, go back to the PowerShell window and press `Ctrl+C` to stop the server.
 
 ## Troubleshooting
 
